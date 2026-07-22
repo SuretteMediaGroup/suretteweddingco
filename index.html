@@ -211,7 +211,7 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
   /* ── STAT BAR ── */
   .stat-bar {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     background: #ffffff;
     border-top: 0.5px solid var(--border);
     border-bottom: 0.5px solid var(--border);
@@ -715,11 +715,14 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
     .three-col-center .section-title { font-size: 1.8rem; }
 
     /* ── STAT BAR ── 2x2 grid */
-    .stat-bar { grid-template-columns: 1fr 1fr; }
+    .stat-bar { grid-template-columns: 1fr; }
     .stat-item {
       padding: 1.8rem 1.5rem;
       text-align: center;
+      border-right: none;
+      border-bottom: 0.5px solid var(--border);
     }
+    .stat-item:last-child { border-bottom: none; }
     .stat-num { font-size: 2.2rem; }
     .stat-label { font-size: 0.52rem; }
 
@@ -976,10 +979,9 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
 
 <!-- STAT BAR -->
 <div class="stat-bar">
-  <div class="stat-item"><div class="stat-num">240+</div><div class="stat-label">Couples Celebrated</div></div>
-  <div class="stat-item"><div class="stat-num">12</div><div class="stat-label">Years of Experience</div></div>
-  <div class="stat-item"><div class="stat-num">30+</div><div class="stat-label">Venues Photographed</div></div>
-  <div class="stat-item"><div class="stat-num">100%</div><div class="stat-label">Five-Star Reviews</div></div>
+  <div class="stat-item"><div class="stat-num">Est. 2017</div><div class="stat-label">Boston, MA</div></div>
+  <div class="stat-item"><div class="stat-num">200+</div><div class="stat-label">Weddings Photographed</div></div>
+  <div class="stat-item"><div class="stat-num">New England</div><div class="stat-label">&amp; Beyond</div></div>
 </div>
 
 <!-- ABOUT -->
