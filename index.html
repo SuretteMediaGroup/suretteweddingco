@@ -356,12 +356,16 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
   }
 
   .gallery-item {
-    aspect-ratio: 3/4;
+    aspect-ratio: 2/3;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     background: linear-gradient(160deg, #E0D5C5 0%, #C2AF92 100%);
   }
+
+  /* Portrait photos are 2:3, so matching tiles show them fully (no cropped feet).
+     Center-align covers the two landscape shots least-badly until they're swapped. */
+  .gallery-item img { object-position: center center !important; }
 
   .gallery-item:nth-child(2) { background: linear-gradient(160deg, #D8CEBE 0%, #B8A07A 100%); }
   .gallery-item:nth-child(3) { background: linear-gradient(160deg, #CEBFA8 0%, #A08060 100%); }
@@ -747,7 +751,7 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
     .gallery-grid {
       grid-template-columns: repeat(2, 1fr) !important;
     }
-    .gallery-item { aspect-ratio: 3/4; }
+    .gallery-item { aspect-ratio: 2/3; }
     .gallery-item:last-child { grid-column: 1 / -1; aspect-ratio: 3/2; }
     .portfolio-header {
       flex-direction: column !important;
