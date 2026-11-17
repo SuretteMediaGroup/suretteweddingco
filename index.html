@@ -677,11 +677,13 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
     nav { padding: 0 1.2rem; }
     .nav-logo img { height: 55px; }
     .hamburger { display: flex; }
+    /* nav's backdrop-filter traps the fixed menu in the nav bar; disable on mobile so the menu fills the viewport */
+    nav { backdrop-filter: none; }
     .nav-links {
       display: none;
       position: fixed; top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(250,247,242,0.98);
-      backdrop-filter: blur(10px);
+      background: #FAF7F2;
+      backdrop-filter: none;
       flex-direction: column; align-items: center; justify-content: center;
       gap: 2.5rem; z-index: 250;
     }
@@ -1109,11 +1111,11 @@ src="https://www.facebook.com/tr?id=1496005615332387&ev=PageView&noscript=1"
       <div class="pricing-card featured">
         <p class="pricing-tier">Wedding Collections</p>
         <h3 class="pricing-name">Wedding Day</h3>
-        <div class="pricing-amount">From $5,000</div>
+        <div class="pricing-amount">Starting at $5,200</div>
         <p class="pricing-note">6, 8 &amp; 10 hour options</p>
         <ul class="pricing-features">
           <li><span class="feat-mark"></span>6, 8, or 10 hours of coverage</li>
-          <li><span class="feat-mark"></span>1 photographer (2nd available +$500)</li>
+          <li><span class="feat-mark"></span>1 photographer (2 included on the 10-hour; +$500 on 6 &amp; 8 hr)</li>
           <li><span class="feat-mark"></span>Engagement session included in 8 &amp; 10 hr</li>
           <li><span class="feat-mark"></span>Private online gallery</li>
           <li><span class="feat-mark"></span>Exclusive printing discounts</li>
